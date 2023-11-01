@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url(../fonts/Nunito-Regular.ttf);
+}
+
+:root {
+    --black: rgb(29, 29, 29);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito';
+    overflow: hidden;
+}
+
+body {
+    background: url('/assets/img/windows-10-dark-blue-5k-8k-1600x900-733\ \(1\).jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.icon {
+    background-color: white;
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+}
+
+.bar-content {
+    height: 55px;
+    background-color: transparent;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+.bar-content:hover~.bar {
+    bottom: 0;
+}
+
+.bar:hover {
+    bottom: 0;
+}
+
+.bar {
+    width: 100vw;
+    height: 50px;
+    background-color: #25262a92;
+    position: fixed;
+    bottom: -100px;
+    transition: 0.8s;
+    transition-delay: 0.2s;
+    z-index: 999;
+    border-top: 1px solid rgba(128, 128, 128, 0.245);
+}
+
+.bar-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.bar-icon:hover {
+    background-color: #2e2b2a;
+    border: 3px solid #25262a;
+    border-radius: 5px;
+}
+
+.bar-icon:active {
+    transform: scale(0.9);
+}
+
+#modal-start {
+    width: 650px;
+    height: 670px;
+    background: #25262a;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -1000px;
+    z-index: 99;
+    border-radius: 10px;
+    transition: 0.8s;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.159);
+}
+
+.bar-show {
+    bottom: 0px;
+}
+
+.btn-contact {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
